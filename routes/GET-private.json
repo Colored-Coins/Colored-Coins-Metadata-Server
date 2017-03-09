@@ -1,0 +1,6 @@
+{
+  "/shareMetadata": {
+    "function_name": "main.shareMetadata",
+    "params": ["torrentHash"]
+  }
+}

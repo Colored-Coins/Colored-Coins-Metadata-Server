@@ -1,0 +1,12 @@
+{
+  "/getMetadata": {
+    "function_name": "main.getMetadata",
+    "params": ["torrentHash"],
+    "optional" :["sha2"]
+  },
+  "/isRunning": {
+    "function_name": "main.isRunning",
+    "params": [],
+    "optional" :[]
+  }
+}

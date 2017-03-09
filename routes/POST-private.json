@@ -1,0 +1,6 @@
+{
+  "/addMetadata": {
+    "function_name": "main.addMetadata",
+    "params": ["metadata"]
+  }
+}

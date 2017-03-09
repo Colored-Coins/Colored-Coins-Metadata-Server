@@ -1,0 +1,8 @@
+node_modules
+properties.conf
+data
+torrents
+*.ccm
+*.torrent
+playground.js
+localdata

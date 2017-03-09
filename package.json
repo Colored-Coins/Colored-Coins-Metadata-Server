@@ -1,0 +1,42 @@
+{
+  "name": "cc-metadata-server",
+  "description": "REST API server for fetching and sharing ColoredCoins transactions metadata",
+  "version": "0.1.0",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^2.1.4",
+    "aws-sdk": "^2.1.16",
+    "casimircore": "^0.11.3",
+    "cc-metadata-handler": "^0.6.0",
+    "graceful-fs": "^4.1.2",
+    "jsonfile": "^2.0.0",
+    "jwt-simple": "^0.3.1",
+    "mime": "^1.3.4",
+    "moment": "^2.9.0"
+  },
+  "devDependencies": {
+    "cross-env": "^3.1.4",
+    "mocha": "^2.3.0",
+    "supertest": "^1.1.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node app.js"
+  },
+  "bin": {
+    "cc-metadata-server": "./bin/cc-metadata-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Colored-Coins/Colored-Coins-Metadata-Server.git"
+  },
+  "keywords": [
+    "torrent",
+    "colored coins",
+    "bitcoin",
+    "blockchain",
+    "cryptocurrency"
+  ],
+  "author": "oleiba",
+  "license": "Apache-2.0"
+}

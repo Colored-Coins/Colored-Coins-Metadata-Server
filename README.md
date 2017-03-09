@@ -32,7 +32,7 @@ $ cc-metadata-server [options]
   Options:
 
     -h, --help                                         output usage information
-    -v, --version                                      output the version number
+    -V, --version                                      output the version number
     -p, --port <port>                                  Port to listen on
 ```
 

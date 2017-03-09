@@ -15,7 +15,16 @@ $ npm i -g cc-metadata-server
 
 ### Run
 
-You can run the ColoredCoins metadata server with the following options:
+Currently, the server uses [AWS S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) storage service as a caching layer.
+So, in order to use the server one needs to set the environment variables:
+
+```
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+AWS_S3_BUCKET
+```
+
+Then, you can run the ColoredCoins metadata server with the following options:
 
 ```sh
 $ cc-metadata-server [options]
@@ -24,9 +33,7 @@ $ cc-metadata-server [options]
 
     -h, --help                                         output usage information
     -v, --version                                      output the version number
-    -p, --port <port>                                  Port to listen on [$PORT or 8080/8081]
-    -s, --ssl <key-file-path> <certificate-file-path>  Enable ssl
-    -c, --conf <config-file-path>                      Load a custom configuration file
+    -p, --port <port>                                  Port to listen on
 ```
 
 Or just run it with the defaults using:
@@ -96,9 +103,10 @@ $ cc-metadata-server
 
 **Note:** this call should be preceded by a call to `POST /addMetadata`
 
-## Data Storage
+## Configuration
 
-Currently, the server uses [*AWS S3*](http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) storage service as a caching layer.
+Default configuration per environment (`NODE_ENV` value) can be found in the [`config` directory](./config). 
+You can use custom properties by adding `properties.conf` to that folder.
 
 ## Development
 

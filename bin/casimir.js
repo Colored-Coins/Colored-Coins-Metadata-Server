@@ -76,6 +76,11 @@ if (requestid) {
   properties.modules.requestid = requestid
 }
 
+// handle relative path issue when running globally
+properties.server.favicon = properties.server.favicon && path.join(__dirname, '..', properties.server.favicon)
+properties.engine.view_folder = properties.engine.view_folder && path.join(__dirname, '..', properties.engine.view_folder)
+properties.engine.static_folder = properties.engine.static_folder && path.join(__dirname, '..', properties.engine.static_folder)
+
 // Set server and server port
 var server = casimirCore.server(properties)
 
